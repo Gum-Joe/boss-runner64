@@ -1,0 +1,4 @@
+# Atlas builds
+packer_cache
+*.box
+packer*
