@@ -38,7 +38,7 @@ python get-pip.py
 # Virtual env
 pip install virtualenv
 # nodejs
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.29.0/install.sh | NVM_DIR="/home/bossjs/.nvm" bash
 # Install stable
 nvm install stable
 # Install rvm
