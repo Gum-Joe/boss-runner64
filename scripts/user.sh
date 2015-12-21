@@ -17,3 +17,5 @@ echo "export CXX=g++-4.8" >> /home/bossjs/.bashrc
 # add use to shell
 echo "source ~/.nvm/nvm.sh" >> /home/bossjs/.bashrc
 echo "nvm use stable" >> /home/bossjs/.bashrc
+# add to sudo
+sudo adduser bossjs adm sudo lpadmin sambashare
