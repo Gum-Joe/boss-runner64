@@ -28,8 +28,8 @@ sudo adduser --disabled-password --gecos "" bossjs
 ssh-keygen -b 1024 -f bossjs -t dsa
 sudo mkdir -p /home/bossjs/.ssh
 cat bossjs.pub | sudo tee -a /home/bossjs/.ssh/authorized_keys
-sudo chmod 600 /home/bossjs/.ssh/authorized_keys
-sudo chmod 700 /home/bossjs/.ssh
+sudo chmod 0600 /home/bossjs/.ssh/authorized_keys
+sudo chmod 0700 /home/bossjs/.ssh
 sudo chown -R bossjs /home/bossjs
 
 # Install languages
@@ -45,7 +45,7 @@ nvm install stable
 gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 curl -sSL https://get.rvm.io | bash -s stable
 source /etc/profile.d/rvm.sh
-rvm install ruby_head
+rvm install 2.2.4
 # Install bundle
 gem install bundle
 # Done!
